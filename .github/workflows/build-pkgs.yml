@@ -18,6 +18,7 @@ jobs:
           bump-kernel: false
           bump-modules: "none"
           gpg-key: ${{ secrets.GPG_KEY }}
+          gpg-key-sign: ${{ secrets.GPG_SIGN }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
           boxit-host: ${{ secrets.BOXIT_HOST }}
           boxit-target: ${{ secrets.BOXIT_TARGET }}
