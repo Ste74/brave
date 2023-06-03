@@ -2,10 +2,15 @@ name: Build Pkgs
 
 on:
   workflow_dispatch:
+  
+permissions:
+  contents: 'read'
+  id-token: 'write'
+  issues: 'write' 
 
 jobs:
   build-pkg:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-20.00
     steps:
       - uses: Ste74/build-pkgs@main
         with:
