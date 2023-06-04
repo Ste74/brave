@@ -7,12 +7,11 @@ on:
 
 jobs:
   build-pkg:
+    runs-on: ubuntu-latest
     permissions:
         contents: 'read'
         id-token: 'write'
-        issues: 'write' 
-  
-    runs-on: ubuntu-20.00
+        issues: 'write'
     steps:
       - uses: Ste74/build-pkgs@main
         with:
