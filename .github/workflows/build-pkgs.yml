@@ -15,11 +15,7 @@ jobs:
           manjaro-user: ${{ secrets.manjaro_user }}
           build-mirror: ${{ secrets.BUILD_MIRROR }}
           branch: "unstable"
-          bump-kernel: false
-          bump-modules: "none"
           gpg-key: ${{ secrets.GPG_KEY }}
           gpg-key-sign: ${{ secrets.GPG_SIGN }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}
-          boxit-host: ${{ secrets.BOXIT_HOST }}
-          boxit-target: ${{ secrets.BOXIT_TARGET }}
           ssh-key: ${{ secrets.SSH_PACKAGE_CI }}
